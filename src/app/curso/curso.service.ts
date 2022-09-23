@@ -22,7 +22,7 @@ export class CursoService {
   obterCursos():Observable<Curso>{
     return this.http.get(this.url+"listar").pipe(
       map((res)=>{
-        this.vetor = res[];
+        this.vetor = res=['cursos'];
         return this.vetor;
       })
     )
